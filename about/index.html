@@ -228,14 +228,14 @@
 
           
           <li>
-            <a href="/tags/">Tags</a>
+            <a href="/categories/">Categories</a>
           </li>
           
           
 
           
           <li>
-            <a href="/categories/">Categories</a>
+            <a href="/tags/">Tags</a>
           </li>
           
           
@@ -291,11 +291,10 @@
 	<!-- Modified by Yu-Hsuan Yen -->
 <!-- Post Header -->
 
-  <!-- CDN: jsdelivr start -->
   <style type="text/css">
     header.intro-header {
        /*page*/
-        background-image: url('https://cdn.jsdelivr.net/gh/ARobotLover/ARobotLover.github.io/img/scenery/about_bg.jpg');
+        background-image: url('/img/scenery/about_bg.jpg');
       
     }
 
@@ -305,7 +304,6 @@
       }
     
   </style>
-  <!-- CDN: jsdelivr end -->
 
 
 
@@ -485,7 +483,7 @@
     
 
     
-    <p>The great pleasure in life is doing what people say you cannot do</p>
+    <p>The great pleasure in life is doing what people say you cannot do.</p>
     
 
     <!-- SNS Link -->
@@ -731,29 +729,6 @@
   <!-- ThemeColor end -->
 
 
-
-  <!-- CDN: jsdelivr start -->
-  <script type="text/javascript">
-    let imgsUrl = document.getElementsByTagName("img");
-    let imgUrl = Array.from(imgsUrl);
-
-    let jsdelivr = "https://cdn.jsdelivr.net/gh/";
-    let gh = "ARobotLover";
-    let ghPages = gh + ".github.io";
-    let pagePath = "about/index.html";
-    let jsdelivrurl;
-    if (pagePath.indexOf("index.html") != -1) {
-      jsdelivrurl = jsdelivr + gh + "/" + ghPages;
-    }else{
-      jsdelivrurl = jsdelivr + gh + "/" + ghPages + "/" + pagePath;
-    }
-    imgUrl.forEach(item => {
-      let oldUrl = item.getAttribute("src");
-      let newUrl = oldUrl.replace(oldUrl, jsdelivrurl + oldUrl).replace("..","");
-      item.setAttribute("src", newUrl);
-    });
-  </script>
-  <!-- CDN: jsdelivr end -->
 
 
 
